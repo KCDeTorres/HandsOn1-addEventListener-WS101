@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Hands-On Act 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+    
+        body {
+            background: url(1322308.jpeg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .float {
+            position: absolute;
+            margin-top: 5rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            border-radius: 15px;
+            color: antiquewhite;
+            backdrop-filter: blur(1px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 10px;
+            position: fixed;
+            margin-top: 10rem;
+        }
+
+        button {
+            color: antiquewhite;
+            font-size: 1rem;
+            background-color: #101f3c;
+            border: none;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A6A2C4;
+            transform: scale(1.08);
+        }
+
+        button:active {
+            background-color: #0B2854;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="float">
+        <div class="content">
+            <h1> Javascript addEventListener() Hands-On </h1>
+            <div class="butCon">
+            <button id="bOne"> Button One </button>
+            <button id="bTwo"> Button Two </button>
+            <button id="bThree"> Button Three </button></div>
+        </div>
+    </div>
+    
+    <script>
+
+        document.getElementById('bOne').addEventListener('click', b1click);
+        document.getElementById('bTwo').addEventListener('click', b2click);
+        document.getElementById('bThree').addEventListener('click', b3click);
+
+        function b1click(){
+            window.alert("Button 1 was clicked!")
+        }
+        function b2click(){
+            window.alert("Button 2 was clicked!")
+        }
+        function b3click(){
+            window.alert("Button 3 was clicked!")
+        }
+    </script>
+</body>
+</html>
